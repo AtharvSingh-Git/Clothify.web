@@ -1,0 +1,266 @@
+body {
+   margin: 0;
+ }
+ 
+ *{
+    scroll-behavior:smooth ;
+ }
+ 
+ nav {
+    background-color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: large;
+    height: 4vmax;
+    align-items: center;
+    display: flex;
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.763);
+ }
+
+.Left > img {
+    align-items: center;
+    margin: auto;
+}
+
+.left {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+.left >a {
+    text-decoration: none;
+    color: crimson;
+    font-size: 2vmax;
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+
+.mid {
+    width: 60%;
+    display: flex;
+    justify-items: center;
+    align-self: stretch;
+}
+
+.mid >a:hover {
+    color:  crimson;
+    border-bottom: 2px solid crimson;
+}
+
+.mid >a {
+    font-size: 1.5vmax;
+
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.right {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.right > img {
+    width: 2.5vmax;
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+}
+
+.home {
+    display: flex;
+    height: 90vh;
+    background-image: radial-gradient(rgb(230, 221, 255), rgb(184, 184, 223));
+
+}
+
+.Container {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#RightContainer {
+    display: flex;
+    justify-content:flex-end;
+}
+
+#RightContainer > img {
+    margin: 7svmax;
+    filter: drop-shadow(0 0 10px black);
+
+}
+
+#LeftContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2vmax;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#LeftContainer > h1 {
+    font-size: 5vmax;
+    font-family: 'Handlee', cursive;
+
+}
+
+#LeftContainer > h2 {
+    font-size: 2vmax;
+    font-family: 'Handlee', cursive;
+    margin-top: -9%;
+}
+
+#LeftContainer > p {
+    font-size: 1.5vmax;
+    font-family:'IBM Plex Mono', monospace;
+    margin-left: 3%;
+}
+
+#LeftContainer > button {
+    background-color: crimson;
+    color: white;
+    margin-left: 2.3%;
+    width: 11vmax;
+    padding: 1vmax;
+    border-radius: 2vmax;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+
+}
+
+#LeftContainer > button:hover {
+    color: black;
+    transition: all 0.5s;
+    
+    background-color: rgba(240, 248, 255, 0);
+}
+
+
+/*------------------------------*/
+
+#products {
+    height: 150vh;
+}
+
+#products > h1 {
+    text-align: center;
+    margin: 5vmax auto;
+    font-size: 2.5vmax;
+    border-bottom: 4px solid crimson;
+    width: 25vw;
+    padding: 1vmax;
+
+}
+
+.productsContainer{
+    max-width: 80vw;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+/*------------------------------*/
+
+.product > img {
+    width: 20vmax;
+}
+
+.product {
+    width: 22vmax;
+    transition: all 0.4s;
+    height: 30vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+
+.product >h4 {
+    margin: 2%;
+}
+.product >h5 {
+    margin: -1px;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+/*------------------------------*/
+
+footer {
+    margin-top: 10vmax;
+    padding: 2vmax;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .leftFooter {
+    width: 20%;
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftFooter > h4 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .leftFooter > p {
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .leftFooter > img {
+    width: 10vmax;
+    margin: 1vmax;
+    cursor: pointer;
+  }
+  
+  .midFooter {
+    width: 60%;
+  
+    text-align: center;
+  }
+  
+  .midFooter > h1 {
+    font-size: 4vmax;
+    font-family: 'IBM Plex Mono', monospace;
+    color: crimson;
+  }
+  .midFooter > p {
+    max-width: 60%;
+    margin: 1vmax auto;
+  }
+  
+  .rightFooter {
+    width: 20%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rightFooter > h4 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.4vmax;
+    text-decoration: underline;
+
+  }
+  .rightFooter > a {
+    text-decoration: none;
+    font-size: 1.3vmax;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: white;
+    margin: 0.5vmax;
+  }
